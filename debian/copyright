@@ -1,7 +1,7 @@
-This package was debianized by Ryan Prior <ryanprior@gmail.com> on
-Mon, 29 Jun 2009 17:31:15 -0400.
+This package was debianized by NECDET COKYAZICI <cokyazici@gmail.com> on
+Tue, 6 Sep 2011 21:30:00 -0400.
 
-It was downloaded from http://www.ecere.com/ecere-sdk-0.44d2.1.tar.gz
+It was downloaded from http://www.ecere.com/ from the git repository
 
 Upstream Author(s):
 
@@ -12,7 +12,7 @@ Upstream Author(s):
 
 Copyright:
 
-    Copyright (c) 1996-2009 Ecere Corporation
+    Copyright (c) 1996-2011 Ecere Corporation
 
 License:
 
@@ -35,5 +35,5 @@ On Debian systems, the complete text of the BSD License can be
 found in `/usr/share/common-licenses/BSD'.
 
 
-The Debian packaging is copyright 2009, Ryan Prior <ryanprior@gmail.com> and
+The Debian packaging is copyright 1996-2011 Ecere Corporation and
 is licensed under the BSD License (/usr/share/common-licenses/BSD).
