@@ -3,13 +3,33 @@ Section: devel
 Priority: optional
 Maintainer: Jerome St-Louis <jerome@ecere.com>
 XSBC-Original-Maintainer: Ryan Prior <ryanprior@gmail.com>
-Build-Depends: cdbs, debhelper (>= 7), autotools-dev, build-essential, linux-libc-dev, gcc-multilib [amd64], ia32-libs [amd64], libc6-dev-i386 [amd64], lib32z1-dev [amd64], lib32ncurses5-dev [amd64], libc6-dev, libfontconfig1-dev, libfreetype6-dev, libgif-dev, libgl1-mesa-dev, libjpeg62-dev, libncurses5-dev, libpng12-dev, libx11-dev, libxext-dev, libxrender-dev, libz-dev, upx-ucl, zlib1g-dev
+Build-Depends:
+ autotools-dev,
+ debhelper (>= 7.0.50~),
+ gcc-multilib [amd64],
+ ia32-libs [amd64],
+ lib32ncurses5-dev [amd64],
+ lib32z1-dev [amd64],
+ libc6-dev-i386 [amd64],
+ libfontconfig1-dev,
+ libfreetype6-dev,
+ libgif-dev,
+ libgl1-mesa-dev,
+ libjpeg62-dev,
+ libncurses5-dev,
+ libpng12-dev,
+ libx11-dev,
+ libxext-dev,
+ libxrender-dev,
+ linux-libc-dev,
+ upx-ucl,
+ zlib1g-dev
 Standards-Version: 3.8.0
 Homepage: http://www.ecere.com/
 
 Package: ecere-sdk
 Architecture: amd64 i386
-Depends: ${shlibs:Depends}, ${devel:Depends}, libecere, ecere-samples, ecere-doc
+Depends: ecere-doc, ecere-samples, libecere, ${devel:Depends}, ${shlibs:Depends}
 Description: Ecere cross-platform SDK
   Develop applications once, deploy them on
   all platforms alongside a lightweight runtime
@@ -17,7 +37,7 @@ Description: Ecere cross-platform SDK
 
 Package: libecere
 Architecture: amd64 i386
-Depends: ${shlibs:Depends}, ${devel:Depends}
+Depends: ${devel:Depends}, ${shlibs:Depends}
 Description: Ecere cross-platform SDK
   Develop applications once, deploy them on
   all platforms alongside a lightweight runtime
@@ -25,7 +45,7 @@ Description: Ecere cross-platform SDK
 
 Package: ecere-samples
 Architecture: amd64 i386
-Depends: ${shlibs:Depends}, ${devel:Depends}
+Depends: ${devel:Depends}, ${shlibs:Depends}
 Description: Project samples for the Ecere SDK
   This package contains samples for multimedia,
   database, graphics, communication, and other
@@ -34,7 +54,7 @@ Description: Project samples for the Ecere SDK
 
 Package: ecere-doc
 Architecture: amd64 i386
-Depends: ${shlibs:Depends}, ${devel:Depends}
+Depends: ${devel:Depends}, ${shlibs:Depends}
 Description: Documentation for the Ecere SDK
   This package includes the Ecere Tao of Programming,
   an ebook designed to help programmers become familiar
