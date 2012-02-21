@@ -5,15 +5,15 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 build:
 ifeq ($(DEB_HOST_ARCH),amd64)
-   cp libecere.install.in64 libecere.install
-   cp ecere-sdk.install.in64 ecere-sdk.install
+	cp libecere.install.in64 libecere.install
+	cp ecere-sdk.install.in64 ecere-sdk.install
 endif
 
 ifeq ($(DEB_HOST_ARCH),i386)
-   cp libecere.install.in32 libecere.install
-   cp ecere-sdk.install.in32 ecere-sdk.install
+	cp libecere.install.in32 libecere.install
+	cp ecere-sdk.install.in32 ecere-sdk.install
 endif
-   dh $@
+	dh $@
 
 %:
-   dh $@
+	dh $@
