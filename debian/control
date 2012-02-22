@@ -38,7 +38,7 @@ Description: Ecere cross-platform SDK
 Package: libecere
 Architecture: amd64 i386
 Depends: ${devel:Depends}, ${shlibs:Depends}
-Description: Ecere cross-platform SDK
+Description: Ecere Runtime Library
   Develop applications once, deploy them on
   all platforms alongside a lightweight runtime
   environment.
@@ -64,7 +64,7 @@ Description: Documentation for the Ecere SDK
 Package: ecere-extras
 Architecture: all
 Depends: ${devel:Depends}, ${shlibs:Depends}
-Description: Documentation for the Ecere SDK
+Description: Extras for the Ecere SDK
   This package provides additional Ecere
   functionality, such as SSL Sockets, Audio,
   in the form of source code. Also included:
