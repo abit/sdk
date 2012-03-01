@@ -16,3 +16,5 @@ ifeq ($(DEB_HOST_ARCH),i386)
 	cp debian/ecere-sdk.install.in32 debian/ecere-sdk.install
 endif
 	dh_install
+
+override_dh_strip:
